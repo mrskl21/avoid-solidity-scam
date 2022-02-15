@@ -1,0 +1,1 @@
+# avoid-solidity-scam
