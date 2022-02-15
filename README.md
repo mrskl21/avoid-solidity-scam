@@ -14,8 +14,8 @@ To help other to DYOR about solidity smart contract.
 ## USING OLD CONTRACT
 
     - Kontrak ini sudah tua dan telah diperbaharui, project baru seharusnya sudah tidak lagi menggunakan versi ini
-    - Jika dalam kontrak menggunakan uniswapV1Router. Dapat ditemukan dengan cara mencari address yang berawalan `0x05`
-    - untuk kontrak V2 terbaru yg aman uniswapV2Router `0x10ed43c718714eb63d5aa57b78b54704e256024e`
+    - Jika dalam kontrak menggunakan uniswapV1Router. Dapat ditemukan dengan cara mencari address yang berawalan "0x05"
+    - untuk kontrak V2 terbaru yg aman uniswapV2Router "0x10ed43c718714eb63d5aa57b78b54704e256024e"
 
 ## MINT TOKEN
 
