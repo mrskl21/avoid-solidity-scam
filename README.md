@@ -2,14 +2,14 @@
 
 To help other to DYOR about solidity smart contract.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [USING OLD CONTRACT](#using-old-contract)
 - [MINT TOKEN](#mint-token)
 - [PAUSE TRADE](#pause-trade)
 - [REVERT SELL](#revert-sell)
 - [BLACKLIST ADDRESS](#blacklist-address)
-- [SET MAX TX AMOUNT](#set-max-tx-amount)
+- [SET MAX TX AMOUNT](#set-max-tx-amount) -->
 
 ## USING OLD CONTRACT
 
