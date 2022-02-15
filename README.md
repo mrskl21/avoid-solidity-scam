@@ -7,20 +7,23 @@ To help other to DYOR about solidity smart contract.
 - [USING OLD CONTRACT](#using-old-contract)
 - [MINT TOKEN](#mint-token)
 - [PAUSE TRADE](#pause-trade)
+- [REVERT SELL](#revert-sell)
+- [BLACKLIST ADDRESS](#blacklist-address)
+- [SET MAX TX AMOUNT](#set-max-tx-amount)
 
-## 1. USING OLD CONTRACT
+## USING OLD CONTRACT
 
     - Kontrak ini sudah tua dan telah diperbaharui, project baru seharusnya sudah tidak lagi menggunakan versi ini
     - Jika dalam kontrak menggunakan uniswapV1Router. Dapat ditemukan dengan cara mencari address yang berawalan `0x05`
     - untuk kontrak V2 terbaru yg aman uniswapV2Router `0x10ed43c718714eb63d5aa57b78b54704e256024e`
 
-## 2. MINT TOKEN
+## MINT TOKEN
 
     - Proses mint seharusnya dilakukan sekali, namun jika ada proses mint setelahnya, dev bisa terus menambah jumlah token dalam walletnya sendiri.
     - Perhatikan function yang dapat menambahkan amount token ke total Supply dan wallet.
     - Biasanya dev akan menamai function dengan nama yang lain, agar tidak diketahui.
 
-## 3. PAUSE TRADE
+## PAUSE TRADE
 
     - Proses ini akan dilakukan dev agar holder lain selain dia, tidak bisa transaksi jual/beli. Hanya address tertentu yang bisa.
 
@@ -37,7 +40,7 @@ To help other to DYOR about solidity smart contract.
         }
     ```
 
-## 4. REVERT SELL
+## REVERT SELL
 
     - Proses ini bertujuan agar holder selain dev/owner tidak bisa menjual token.
     - Perhatikan jika dalam kontrak yang compiler solidity 0.5.xx :
@@ -63,7 +66,7 @@ To help other to DYOR about solidity smart contract.
         pragma solidity 0.6.0;
     ```
 
-## 5. BLACKLIST ADDRESS
+## BLACKLIST ADDRESS
 
     - Proses ini bertujuan untuk membuat beberapa address tidak bisa bertransaksi. 
     - Perhatikan function external dengan kata kunci blacklist
@@ -83,7 +86,7 @@ To help other to DYOR about solidity smart contract.
             blacklist[account] = true;
         }
     ```
-## 6. SET MAX TX AMOUNT
+## SET MAX TX AMOUNT
 
     - Proses ini bertujuan agar holder hanya dapat membeli dan menjual token di bawah angka maksimal
     - Ini dapat berpotensi scam jika terdapat function external untuk mengubah nilai max jual/beli
